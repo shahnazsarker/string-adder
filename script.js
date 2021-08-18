@@ -16,6 +16,8 @@ document.getElementById('surname-submit').addEventListener('click', function () 
 document.getElementById('fullname-submit').addEventListener('click', function () {
     const fullName = document.getElementById('fName').value + ' ' + document.getElementById('sName').value;
     console.log(fullName);
+    document.getElementById('fName').value = '';
+    document.getElementById('sName').value = '';
 
 
 })
